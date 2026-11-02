@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D-Druck & Design Service</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0f7ff',
+              100: '#e0effe',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen font-sans antialiased">
+
+  <!-- Haupt-Container -->
+  <div class="max-w-4xl mx-auto px-6 py-12 space-y-16">
+
+    <!-- HERO SECTION (Titel & Willkommen) -->
+    <header class="text-center space-y-4 py-6">
+      <span class="text-sky-400 font-semibold tracking-wide uppercase text-xs sm:text-sm">3D-Design & Fertigung</span>
+      <h1 class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight">
+        3D-Druck <span class="text-sky-400">Projekte</span>
+      </h1>
+      <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+        Willkommen! Hier finden Sie eine Übersicht von individuell konstruierten und gedruckten 3D-Modellen. Ich erstelle Designs nach Wunsch und fertige sie mit meinem 3D-Druckern an.
+      </p>
+      
+      <!-- Schnellnavigations-Buttons -->
+      <div class="pt-4 flex justify-center gap-4">
+        <a href="#projekte" class="bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold px-6 py-3 rounded-xl shadow-lg shadow-sky-500/20 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-sky-500/40">
+          Projekte ansehen
+        </a>
+        <a href="#kontakt" class="bg-slate-800 hover:bg-slate-700 text-sky-300 border border-sky-500/30 font-semibold px-6 py-3 rounded-xl transition-all duration-200 transform hover:-translate-y-1 hover:border-sky-400">
+          Projekt anfragen
+        </a>
+      </div>
+    </header>
+
+    <hr class="border-slate-800">
+
+    <!-- PROJEKT-RASTER SECTION -->
+    <section id="projekte" class="space-y-8 scroll-mt-12">
+      <div class="text-center md:text-left">
+        <h2 class="text-3xl font-bold text-white">Referenzen</h2>
+        <p class="text-slate-400 mt-1">Modelle und Bauteile.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <!-- Projekt 1 -->
+        <div class="bg-slate-800/80 border border-slate-700/60 hover:border-sky-500/40 rounded-2xl overflow-hidden transition-all duration-200 flex flex-col justify-between group">
+          <div>
+            <img src="bilder/druck-1.jpg" alt="3D Druck Projekt 1" class="w-full h-48 object-cover">
+            <div class="p-5 space-y-2">
+              <h3 class="text-lg font-bold text-white group-hover:text-sky-400 transition">Auto Handyhalterung</h3>
+              <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                Eine Cupra-Smartphone-Halterung mit integriertem NFC-Tag zur Aktivierung eines Fokus. Für ein iPhone 15.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projekt 2 -->
+        <div class="bg-slate-800/80 border border-slate-700/60 hover:border-sky-500/40 rounded-2xl overflow-hidden transition-all duration-200 flex flex-col justify-between group">
+          <div>
+            <img src="bilder/druck-2.jpg" alt="3D Druck Projekt 2" class="w-full h-48 object-cover">
+            <div class="p-5 space-y-2">
+              <h3 class="text-lg font-bold text-white group-hover:text-sky-400 transition">Sportgerätehalter</h3>
+              <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                Eine maßgefertigte Halterung für Sportgeräte, die passgenau auf das Lochblech einer Heizungsverkleidung aufgesteckt wird.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projekt 3 -->
+        <div class="bg-slate-800/80 border border-slate-700/60 hover:border-sky-500/40 rounded-2xl overflow-hidden transition-all duration-200 flex flex-col justify-between group">
+          <div>
+            <img src="bilder/druck-3.jpg" alt="3D Druck Projekt 3" class="w-full h-48 object-cover">
+            <div class="p-5 space-y-2">
+              <h3 class="text-lg font-bold text-white group-hover:text-sky-400 transition">Zaunhalterung</h3>
+              <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                Komplexes 3D-Modell im Rahmen eines individuellen Redesigns. Hier habe ich ein speziellen Zaunhalter funktionsgerecht digital nachgebaut.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <hr class="border-slate-800">
+
+<!-- PREISLISTE SECTION -->
+    <section class="space-y-8">
+      <div class="text-center md:text-left">
+        <h2 class="text-3xl font-bold text-white">Preise & Angebote</h2>
+        <p class="text-slate-400 mt-1">Transparente Preise orientiert an Größe und Aufwand deiner 3D-Druck-Projekte.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <!-- Kategorie 1: Sehr klein -->
+        <div class="bg-slate-800/80 border border-slate-700/60 hover:border-sky-500/40 rounded-2xl overflow-hidden transition-all duration-200 group">
+          <img src="bilder/preis-klein.jpg" alt="Kleine Ersatzteile" class="w-full h-40 object-cover">
+          <div class="p-5 space-y-2">
+            <span class="text-xs font-bold text-sky-400 uppercase tracking-wider">Kleine Ersatzteile</span>
+            <h3 class="text-2xl font-extrabold text-white">unter 5 €</h3>
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+              Ideal für kleine, einfache Bauteile, Halterungen oder schnelle Ersatzteile mit geringem Materialverbrauch.
+            </p>
+          </div>
+        </div>
+
+        <!-- Kategorie 2: Mittel -->
+        <div class="bg-slate-800/80 border border-slate-700/60 hover:border-sky-500/40 rounded-2xl overflow-hidden transition-all duration-200 group shadow-lg shadow-sky-500/5">
+          <img src="bilder/preis-mittel.jpg" alt="Mittlere Projekte" class="w-full h-40 object-cover">
+          <div class="p-5 space-y-2">
+            <span class="text-xs font-bold text-sky-400 uppercase tracking-wider">Mittlere Projekte</span>
+            <h3 class="text-2xl font-extrabold text-white">ca. 5 €</h3>
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+              Perfekt für aufwendigere Funktionsteile, größere Halterungen oder längere Druckzeiten.
+            </p>
+          </div>
+        </div>
+
+        <!-- Kategorie 3: Groß -->
+        <div class="bg-slate-800/80 border border-slate-700/60 hover:border-sky-500/40 rounded-2xl overflow-hidden transition-all duration-200 group">
+          <img src="bilder/preis-gross.jpg" alt="Große & komplexe Projekte" class="w-full h-40 object-cover">
+          <div class="p-5 space-y-2">
+            <span class="text-xs font-bold text-sky-400 uppercase tracking-wider">Komplexe Modelle</span>
+            <h3 class="text-2xl font-extrabold text-white">über 5 €</h3>
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+              Für größere, mehrteilige Modelle, aufwendiges Design oder hohen Filament- und Zeitbedarf.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- KONTAKT FORMULAR SECTION -->
+    <section id="kontakt" class="bg-slate-800/80 border border-slate-700 p-8 rounded-2xl space-y-6 scroll-mt-12">
+      <div>
+        <h2 class="text-2xl font-bold text-white">Projekt anfragen oder Nachricht senden</h2>
+        <p class="text-slate-400 text-sm mt-1">Sie haben eine Idee für ein 3D-Modell oder brauchen einen Ausdruck? Schreiben Sie mir eine Nachricht! Spätere Details und Bilder können Sie mir einfach per E-Mail schicken, falls es noch zu Rückfragen kommen sollte.</p>
+      </div>
+
+      <!-- Formspree Kontaktformular -->
+      <form action="https://formspree.io/f/xbggpawb" method="POST" class="space-y-4">
+        <div>
+          <label class="block text-sm font-medium text-slate-300 mb-1">Dein Name <span class="text-red-500 font-bold">*</span></label>
+          <input type="text" name="name" required placeholder="Vor- und Nachname" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-sky-400 transition">
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-slate-300 mb-1">Deine E-Mail Adresse <span class="text-red-500 font-bold">*</label>
+          <input type="email" name="email" required placeholder="beispiel@beispiel.de" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-sky-400 transition">
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-slate-300 mb-1">Gewünschte Projektgröße / Preiskategorie</label>
+          <select name="preiskategorie" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-sky-400 transition">
+            <option value="Keine Angabe / Allgemeine Anfrage">Bitte auswählen (optional)...</option>
+            <option value="Kleine Ersatzteile (ca. 5 €)">Kleine Ersatzteile (ca. 5 €)</option>
+            <option value="Mittlere Projekte (ca. 10 €)">Mittlere Projekte (ca. 10 €)</option>
+            <option value="Komplexe Modelle (ca. 20 €)">Komplexe Modelle (ca. 20 €)</option>
+            <option value="Individuelles / Großes Projekt">Individuelles / Großes Projekt (individueller Preis)</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-slate-300 mb-1">Anfrage / Nachricht <span class="text-red-500 font-bold">*</label>
+          <textarea name="message" rows="4" required placeholder="Beschreibe kurz dein gewünschtes 3D-Druck-Projekt..." class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-sky-400 transition"></textarea>
+        </div>
+
+        <button type="submit" class="w-full bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold py-3.5 rounded-xl shadow-lg shadow-sky-500/20 transition-all duration-200 transform hover:-translate-y-1 hover:shadow-sky-500/40">
+          Anfrage absenden
+        </button>
+      </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+      <div>
+        © 2026 3D-Druck Service. Alle Rechte vorbehalten.
+      </div>
+
+      <!-- Contact Button & Impressum Link -->
+      <div class="flex items-center gap-3 flex-wrap justify-center">
+        <!-- Impressum Link -->
+        <a href="#impressum" class="hover:text-sky-400 underline transition">
+          Impressum & Datenschutz
+        </a>
+      </div>
+    </footer>
+
+    <!-- IMPRESSUM & DATENSCHUTZ SECTION -->
+    <section id="impressum" class="pt-8 border-t border-slate-800 text-xs text-slate-500 space-y-4">
+      <h3 class="text-sm font-bold text-slate-300">Impressum</h3>
+      <p class="leading-relaxed">
+        <strong>Angaben gemäß § 5 DDG:</strong><br>
+        Elio Päuser<br>
+        Heeper Straße 45b<br>
+        33818 Leopoldshöhe<br>
+        E-Mail: elio.paeuser (a) web.de
+      </p>
+
+      <h3 class="text-sm font-bold text-slate-300 pt-2">Datenschutz</h3>
+      <p class="leading-relaxed">
+        Beim Nutzen des Kontaktformulars werden die von dir eingegebenen Daten (Name, E-Mail, Nachricht) zur Bearbeitung der Anfrage über den Dienst Formspree verarbeitet und an mich weitergeleitet. Es werden keine Cookies zu Tracking-Zwecken gesetzt.
+      </p>
+    </section>
+
+</body>
+</html>
